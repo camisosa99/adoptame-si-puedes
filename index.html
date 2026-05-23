@@ -20,33 +20,31 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./imagenes/adoptame-logo.webp" alt="Logo Adoptame si puedes" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/adopciones.html">Adopciones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/comoayudar.html">Cómo ayudar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
+        <a href="index.html">
+            <img src="./imagenes/adoptame-logo.webp" alt="Logo Adoptame si puedes" class="logo">
+        </a>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./html/adopciones.html">Adopciones</a></li>
+                <li><a href="./html/comoayudar.html">Cómo ayudar</a></li>
+                <li><a href="./html/nosotros.html">Nosotros</a></li>
+                <li><a href="./html/contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main class="inicio">
         <section class="sec1">
             <h1>¡BIENVENIDOS!</h1>
             <h2>Adoptame si puedes: Rescatando vidas, creando hogares</h2>
-            <p>En <strong>Adoptame si puedes</strong>, creemos que cada animal merece una segunda oportunidad para encontrar la felicidad. Somos un refugio dedicado al rescate, cuidado y rehabilitación de animales en situación de abandono.
+            <p>En <strong>Adoptame si puedes</strong> rescatamos, rehabilitamos y cuidamos de animales en situación de abandono para darles la segunda oportunidad que merecen. Nuestro objetivo es sanar sus heridas (médicas y emocionales) y acompañarlos hasta encontrar a su familia ideal.
 
-Nuestro objetivo principal es darles la atención que necesitan, tanto médica como emocional, para que puedan sanar y prepararse para una nueva vida. Trabajamos incansablemente para encontrarles familias amorosas que les brinden el hogar que siempre soñaron.
-
-Al adoptar, no solo salvas una vida, sino que también nos ayudas a seguir nuestra misión de cambiar el destino de muchos otros animales. ¿Estás listo para abrir tu corazón y tu hogar?</p>
+Al adoptar, salvas una vida y nos permites seguir rescatando a más animales. <strong>¿Te sumas a cambiar su destino?</strong></p>
             <a href="./html/nosotros.html" class="buttons">Más sobre nosotros</a>
         </section>
         <section class="sec2">
@@ -85,5 +83,6 @@ Al adoptar, no solo salvas una vida, sino que también nos ayudas a seguir nuest
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/menu.js"></script>
 </body>
 </html>

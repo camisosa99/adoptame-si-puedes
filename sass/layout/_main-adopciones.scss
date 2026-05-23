@@ -3,8 +3,22 @@
     width: 100%;
     text-align: center;
     padding-top: 40px;
+    
+    h1 {
+        color: map-get($colores, texto1);
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+    }
+    
+    p {
+        color: map-get($colores, secundario);
+        font-style: italic;
+        font-size: 1.1rem;
+    }
 }
+
 h2 {
     @extend .adopcionesintro;
-    padding-top: 0; // Sobrescribe solo el padding
+    padding-top: 0;
+    color: map-get($colores, texto1);
 }
