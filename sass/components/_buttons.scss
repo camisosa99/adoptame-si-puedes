@@ -1,22 +1,22 @@
 .buttons{
     padding: 10px 20px;
-    background-color: map-get($colores, secundario);
+    background-color: map-get($colores, terciario);
     border-radius: 62.5rem;
     text-decoration: none;
-    color: map-get($colores, texto1);
+    color: map-get($colores, texto2);
     font-size: 20px;
     border: none;
     cursor: pointer;
     @include transicion(all, 0.3s, ease);
 
     &:hover {
-        background-color: map-get($colores, terciario);
+        background-color: map-get($colores, cuaternario);
         color: map-get($colores, texto2);
-        transform: translateY(-2px); // Efecto de elevación
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra suave
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     &:active {
-        transform: translateY(0); // Vuelve a la posición original
+        transform: translateY(0);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     &:focus-visible {

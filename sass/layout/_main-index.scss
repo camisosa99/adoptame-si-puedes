@@ -3,16 +3,29 @@
     background-color: map-get($colores, principal);
     .sec1 {
         text-align: center;
-        max-width: 800px; //solo para sec1
+        max-width: 700px;
         margin: 0 auto 60px auto;
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: map-get($colores, texto1);
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: map-get($colores, secundario);
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 1rem;
+            color: #7A6652;
+            line-height: 1.7;
+            margin-bottom: 24px;
         }
     }
-} 
+}
 
-.sec2, 
+.sec2,
 .sec3 {
     display: flex;
     align-items: center;
@@ -22,24 +35,29 @@
     gap: 40px;
     padding: 0 2.5rem;
     text-align: left;
-    .div-imagen{
+    .div-imagen {
         flex: 1;
         max-width: 45%;
-        img  {
-            max-width: 100%;   /* Que no se deforme */
-            border-radius: 8px;
+        img {
+            max-width: 100%;
+            border-radius: 16px;
             height: auto;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
         }
     }
     .div-texto {
         flex: 1;
         max-width: 45%;
-        text-align: center; // El texto sí debe estar centrado
+        text-align: center;
+        p {
+            color: #7A6652;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
     }
 }
 
-.sec3{
+.sec3 {
     flex-direction: row-reverse;
-} 
-
-
+}

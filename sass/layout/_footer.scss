@@ -1,10 +1,9 @@
 @use "../utilities/maps";
 
-
 footer{
-    background-color: map-get(maps.$colores, secundario);
+    background-color: map-get(maps.$colores, cuaternario);
     display: flex;
-    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     ul{
@@ -13,10 +12,18 @@ footer{
         padding: 0;
         margin: 0;
         li{
-            margin: 5px 0; /* espacio entre cada línea */
+            margin: 5px 0;
+            color: rgba(255,255,255,0.7);
+        }
+    }
+    a {
+        color: rgba(255,255,255,0.7);
+        &:hover {
+            color: map-get(maps.$colores, terciario);
         }
     }
 }
+
 .footer-logo{
     width: 130px;
 }

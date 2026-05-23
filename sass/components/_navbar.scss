@@ -4,21 +4,19 @@ header{
     @include flex(row, space-between, center);
     width: 100%;
     position: sticky;
-    z-index: 1000; /*para que quede por delante*/
+    z-index: 1000;
     top: 0px;
-    background-color: map-get($colores, secundario);
-    //justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
-    //align-items: center; /*esto mueve todos los hijos en sentido vertical cuando tenga row*/;
+    background-color: map-get($colores, secundario) !important;
     nav{
-        @include flex($justify: flex-end); // Solo cambio justify-content
+        @include flex($justify: flex-end);
         font-size: 20px;
         ul{
             @include flex($gap: 20px);
-            list-style: none; /*saca los puntos*/
+            list-style: none;
             margin: 0;
             padding: 0;
             a{
-                @include link-style(map-get($colores, principal), 20px);
+                @include link-style(map-get($colores, texto2), 20px);
             }
         }
     }

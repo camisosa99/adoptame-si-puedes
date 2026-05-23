@@ -1,9 +1,15 @@
 $colores:(
-    principal: #fff6e9,
+    /*principal: #fff6e9,
     secundario: #eed7b5,
     terciario: #f5ab50,
     texto1: #333 ,
-    texto2: #fff
+    texto2: #fff */
+    principal: #FFF0DC,      // durazno claro — fondo general
+    secundario: #5C8C6A,     // verde salvia — navbar, botones, footer
+    terciario: #E07B39,      // terracota — acentos y detalles
+    cuaternario: #3D6B52,    // verde medio — footer y hover
+    texto1: #2E4D38,         // verde oscuro — títulos
+    texto2: #fff             // blanco — texto sobre fondos oscuros
 );
 
 $tamanoletra: (
