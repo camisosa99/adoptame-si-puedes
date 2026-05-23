@@ -175,6 +175,15 @@ footer a:hover {
   padding: 40px 20px;
   text-align: center;
 }
+.contacto h1 {
+  color: #2E4D38;
+  margin-bottom: 12px;
+}
+.contacto p {
+  color: #7A6652;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
 .contacto form {
   display: flex;
   flex-direction: column;
@@ -182,27 +191,48 @@ footer a:hover {
   text-align: left;
 }
 .contacto form label {
-  font-weight: bold;
+  font-weight: 700;
+  color: #2E4D38;
 }
 .contacto form input, .contacto form select, .contacto form textarea {
   padding: 10px;
-  border: 1px solid #e5e5e5;
+  border: 1.5px solid #EED7B5;
   border-radius: 8px;
   font-size: 16px;
   width: 100%;
+  background: #fff;
+  font-family: "Nunito", sans-serif;
 }
 .contacto form input:hover, .contacto form select:hover, .contacto form textarea:hover {
-  border: 2px solid black; /* el color y grosor que quieras */
-  outline: none; /* para evitar el borde azul del navegador */
+  border: 1.5px solid #5C8C6A;
+  outline: none;
   transition: border 0.3s ease;
+}
+.contacto form input:focus, .contacto form select:focus, .contacto form textarea:focus {
+  border: 1.5px solid #5C8C6A;
+  outline: none;
 }
 
 .formulario-contenedor textarea {
-  height: 100px;
+  height: 120px;
 }
 
 .logos-redes {
-  width: 120px;
+  width: 100px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.logos-redes:hover {
+  opacity: 1;
+}
+
+.redes {
+  margin-top: 30px;
+}
+.redes p {
+  color: #7A6652;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .como-ayudar {

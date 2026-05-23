@@ -3,32 +3,66 @@
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
+
+    h1 {
+        color: map-get($colores, texto1);
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: #7A6652;
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
     form {
         display: flex;
         flex-direction: column;
         gap: 15px;
         text-align: left;
         label {
-            font-weight: bold;
+            font-weight: 700;
+            color: map-get($colores, texto1);
         }
         input, select, textarea {
             padding: 10px;
-            border: 1px solid #e5e5e5;
+            border: 1.5px solid #EED7B5;
             border-radius: 8px;
             font-size: 16px;
             width: 100%;
+            background: #fff;
+            font-family: "Nunito", sans-serif;
             &:hover {
-                border: 2px solid black; /* el color y grosor que quieras */
-                outline: none; /* para evitar el borde azul del navegador */
+                border: 1.5px solid map-get($colores, secundario);
+                outline: none;
                 transition: border 0.3s ease;
+            }
+            &:focus {
+                border: 1.5px solid map-get($colores, secundario);
+                outline: none;
             }
         }
     }
 }
 
 .formulario-contenedor textarea {
-    height: 100px;
-} 
+    height: 120px;
+}
+
 .logos-redes {
-    width: 120px;
+    width: 100px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.redes {
+    margin-top: 30px;
+    p {
+        color: #7A6652;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
 }
