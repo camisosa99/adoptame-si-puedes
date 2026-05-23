@@ -1,26 +1,21 @@
 //COMO AYUDAR
 .card-ayuda {
-    background: map-get($colores, secundario);
+    background: #fff;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: left;
+    border: 1.5px solid #EED7B5;
     @include transicion(all, 0.3s, ease);
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        background: map-get($colores, principal);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        background: #FFF6EE;
     }
     h2 {
-        color: map-get($colores, terciario) ;
+        color: map-get($colores, terciario);
         margin-bottom: 15px;
-    }
-    div {
-        background: map-get($colores, secundario);
-        padding: 15px;
-        margin-top: 15px;
-        border-radius: 8px;
-        font-family: monospace;
+        font-size: 1.3rem;
     }
 }
 
